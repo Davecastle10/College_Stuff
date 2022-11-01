@@ -1,0 +1,12 @@
+from itertools import count
+import sympy as sym
+i = count(start = 100000000, step = 1)
+n = False
+while n == False and n < 100500000:
+    if sym.isprime(i) == True:
+        print(i)
+        sys.exit()
+    else:
+        print(i)
+        next(i)
+print(i)
