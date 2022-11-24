@@ -11,3 +11,5 @@ for iterant in range(12):
 x = 3
 if x == 2 or x ==3:
     print('yay')
+
+print(5//2)
