@@ -1,3 +1,5 @@
+# for some reson gitpod doesnt work on library computers
+
 """ STARTR WITH FIRST ITEM OF THE ARRAY
 create coiunter variable
 compare it tio the next item
