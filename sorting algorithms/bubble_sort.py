@@ -1,5 +1,5 @@
 # for some reson gitpod doesnt work on library computers
-
+# the code does wor
 """ STARTR WITH FIRST ITEM OF THE ARRAY
 create coiunter variable
 compare it tio the next item
@@ -22,8 +22,8 @@ def bubble_sorting(sorting_array):
                 temp = sorting_array[counter]# asigni arr[counter]'s value to the temp var
                 sorting_array[counter] = sorting_array[counter + 1] # switching values over this line and next
                 sorting_array[counter + 1] = temp
-#            if counter > len(sorting_array):# makes sure counter +1 cnat be out of range in other bit of code
-            counter += 1# iterating counter by 1
+            if counter > len(sorting_array):# makes sure counter +1 cnat be out of range in other bit of code
+                counter += 1# iterating counter by 1
         counter = 0# resetting counter
         end -+ 1# decreasing end by 1
     pass
@@ -43,8 +43,8 @@ def array_sort(arr):
                 arr[i+1] = temp
     print(arr)
 
-print(array_sort(array_test))
+#print(array_sort(array_test))
 
 
-#print(bubble_sorting(array_test))
+print(bubble_sorting(array_test))
 
