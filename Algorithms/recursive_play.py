@@ -47,6 +47,7 @@ def factorial(input_number):
 
 
 #try to complete a recursive linear search, returning the index of the item, or -1
+""" doesn't work for some reason"""
 def linear_search_recursive(items, check_index, search_item):
     #base cases
     if items[check_index] == search_item:
