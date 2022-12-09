@@ -1,3 +1,6 @@
+# this doesn't work but is good for learning from mistakes
+
+
 def binary_search(list, item, index):
     """ list must be orderd
     go to middle of list

@@ -69,11 +69,44 @@ def linear_search_recursive(items, check_index, search_item):
 
 
 #try to complete a recursive binary search, returning the index of the item, or -1
-def binary_search_recursive(items, search_item):
-    #base cases
-    #recursive case:
-
-    pass
+def binary_search(entered_list, item, index, low, high):
+    """ list must be orderd
+    go to middle of list
+    compare value to item
+    if bigger ignore bigger half of list and vice bversa
+    repeat until item is found or if item is not present
+    output either index or true if item is present based on the value of index parameter
+    or false if item is not present"""
+    # not all comments will be correct, nut the ones in the recurswive binary search file in searching algorithms folder should be
+    middle_index = (low + high)//2# finds the index of the middle value in the list
+    if entered_list[middle_index] == item:# is middle val of list item
+        if index == True:# is index true
+            print(middle_index)# if yes return and print index of middle value, which would be the earliest index of the item
+            return middle_index
+        elif index == False:
+            print(True)# return and print True if item is in list
+            return True
+    elif entered_list[high] < item or entered_list[low] > item:#if search item is greater than largest value in list it is not there
+        if index == True:# is index true
+            return -1
+        elif index == False:
+            return False
+    elif entered_list[middle_index + 1] == item:# copy of code above with variations so it checks the next value to so that if item is lats in list it doenst casue infinte loop
+        if index == True:# is index true
+            return middle_index + 1
+        elif index == False:
+            return True    
+    elif low == high:# else return false  - if you get rid of this elif stuff it loops infintely
+        if index == True:# is index true
+            return -1
+        elif index == False:
+            return False
+    elif item < middle_index + 1:# if item is less than middle value
+               return binary_search(entered_list, item, index, low, middle_index)# call function with botto  half of list instead of total list
+    elif item > middle_index - 1:# if item is greater than middle value
+                return binary_search(entered_list, item, index, middle_index, high)# call funcio again with top half of list
+    
+  
 
 """EXTENSION: Euclid's algorithm. The greatest common divisor (gcd) of two positive integers is the largest integer
 that divides evenly into both of them. For example, the gcd(102, 68) = 34.
@@ -81,6 +114,8 @@ We can efficiently compute the gcd using the following property, which holds for
 
 If p > q, the gcd of p and q is the same as the gcd of q and p % q."""
 
+
+test_list = [1,2,3,4,5,6,7,8,9,10,11,12,13]# witho
 #tests
 #print(pos_dec_to_binary(1234,[]))
 ##or, neater (using a generator expression (outside scope of A-level CS))
@@ -89,4 +124,7 @@ If p > q, the gcd of p and q is the same as the gcd of q and p % q."""
 #print (factorial(4))
 #countdown(10)
 #print(fibonacci(10))
-print(f"this is uindex {linear_search_recursive([1,2,3,4,5,6], 0, 5)}")
+#print(f"this is uindex {linear_search_recursive(test_list, 0, 5)}")
+
+
+print(f"index of search item is {binary_search(test_list, 9, True, 0, len(test_list)-1)}")
