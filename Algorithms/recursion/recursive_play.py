@@ -51,13 +51,19 @@ def factorial(input_number):
 def linear_search_recursive(items, check_index, search_item):
     #base cases
     if items[check_index] == search_item:
-        return check_index
-    elif check_index == len(items):
-        return -1
-    else:
-        #base case
+        print(" if stat")
+        print(items[check_index])
         print(check_index)
-        linear_search_recursive(items, check_index + 1, search_item)
+        return check_index# retur index of the search_item
+        #this works but doesnt return on previous line
+
+    elif check_index == len(items):
+        print("elif stat")
+        return -1# search_item is not there
+
+    else:
+        print(check_index)
+        return linear_search_recursive(items, check_index + 1, search_item)# recursive case
     
 
 
@@ -83,4 +89,4 @@ If p > q, the gcd of p and q is the same as the gcd of q and p % q."""
 #print (factorial(4))
 #countdown(10)
 #print(fibonacci(10))
-print(linear_search_recursive([1,2,3,4,5,6], 0, 5))
+print(f"this is uindex {linear_search_recursive([1,2,3,4,5,6], 0, 5)}")
