@@ -6,5 +6,7 @@
 ## INTERNET
 
 1 Interconnected - Networks
+
 2 Local Area Networks, Nodes (e.g servers, switches, pc's) connected by routers to each other
+
 3 LAN's connected internally by Wifi and Ethernet cables.
