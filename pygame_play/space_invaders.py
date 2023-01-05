@@ -32,7 +32,7 @@ while True:
       sys.exit()
     if event.type == pygame.KEYDOWN:
       if event.key == pygame.K_LEFT:
-        print('bitch')
+      
 
   
     
