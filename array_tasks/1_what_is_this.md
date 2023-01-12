@@ -7,7 +7,7 @@ arrays must be contiguously indexed, meaning that the list is in one large data 
 
 
 
-##5 facts about arrays:
+## 5 facts about arrays:
 
 1 arrays are contiguous, meaning that the array is in one large block of data in RAM, not several smaller blocks, so each entry in the array has the next address in RAM after the previous entry.
 2 arrays have a predefined length that is declared upon their creation.
