@@ -1,4 +1,4 @@
-# This is a bas dummary of what we did during the lesson thursday 2nd febuary 2023
+# This is a bad summary of what we did during the lesson thursday 2nd febuary 2023
 ## re-write this nicely at a later date.
   
 yesterdat we did binary addition and subtraction and stuff with sign magnitude and 2s complement stuff do display negativs in binary
