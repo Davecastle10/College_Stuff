@@ -1,4 +1,4 @@
-
+# creat a program that converts binary to hex
 bin_hex_dict = {
     "0000" : "0",
     "000l" : "1",
@@ -18,7 +18,7 @@ bin_hex_dict = {
     "1111" : "F",
 
 }
-
+"""
 : 0  : 0000 : 0 
 : 1  : 0001 : 1   
 : 2  : 0010 : 2 
@@ -34,4 +34,4 @@ bin_hex_dict = {
 : 12 : 1100 : C 
 : 13 : 1101 : D 
 : 14 : 1110 : E 
-: 15 : 1111 : F 
+: 15 : 1111 : F """
