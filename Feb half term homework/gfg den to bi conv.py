@@ -1,3 +1,5 @@
+#decimal to bionary cpnverter from geeks for geeks but it is on a lot of other websites.
+
 def DecimalToBinary(num):
      
     if num >= 1:
