@@ -39,41 +39,115 @@ def den_to_bin_function(den_num):
 
             power_of_two = power_of_two - 1
             bin_list.append(1)
+            print(power_of_two)
+            print(den_num_copy)
+            print(bin_list)
+            print('ab')
 
-        elif den_num_copy - 2**power_of_two < 0:
+        elif den_num_copy - 2**power_of_two < 0 and den_num_copy > 0:
             power_of_two = power_of_two - 1
             bin_list.append(0)
+            print(power_of_two)
+            print(den_num_copy)
+            print(bin_list)
+            print('bc')
             
         elif den_num_copy - 2**power_of_two == 0:
             bin_list.append(1)
+            print(bin_list)
+            print("kjgkjg")
+            den_num_copy = den_num_copy - 2**power_of_two
             if 2**power_of_two > 0:
                 
                 while power_of_two - 1 > -1 and loop_counter < 10:
                     power_of_two = power_of_two - 1
                     bin_list.append(0)
                     loop_counter += 1
+                    print(power_of_two)
+                    print(den_num_copy)
+                    print(bin_list)
+                    print('cd')
 
                 bin_num_str = "".join(map(str,bin_list))
-                #return bin_num_str
+                return bin_num_str
+                print("jjjjj")#
+                print(bin_list)
 
             else:
                 bin_num_str = "".join(map(str,bin_list))
-                #return bin_num_str
+                return bin_num_str
+                print("jjjjjjjjkkkk")
 
     # add a bit that makes al outputs 8 bit
 
-    if len(bin_list) < 8:
+    if len(bin_list) <= 8:
         num_front_padding = 8 - len(bin_list)
         for i in range(num_front_padding):
             bin_list.insert(0, 0)
+            
+            print(power_of_two)
+            print(den_num_copy)
+            print(bin_list)
+            print('de')
 
         bin_num_str = "".join(map(str,bin_list))
+        print(bin_num_str)
         return bin_num_str
 
 
 
 
-print(den_to_bin_function(254))
+print(den_to_bin_function(100))
 
+"""   
+print(bin_list)
+print(power_of_two)
+print(den_num_copy)
+print(ab)
+README.md""" 
+
+
+
+def den_to_hex(denary_num):
+    bin_hex_dict = {
+        "0000" : "0",
+        "000l" : "1",
+        "0010" : "2",
+        "0011" : "3",
+        "0100" : "4",
+        "0101" : "5",
+        "0110" : "6",
+        "0111" : "7",
+        "1000" : "8",
+        "1001" : "9",
+        "1010" : "A",
+        "1011" : "B",
+        "1100" : "C",
+        "1101" : "D",
+        "1110" : "E",
+        "1111" : "F",
+
+    }
+
+    binary_num_str = den_to_bin_function(denary_num)
+    if len(binary_num_str) % 4 != 0:
+        for i in range(len(binary_num_str) % 4):
+            binary_num_str = "0" + binary_num_str
     
+    for i in range(len(binary_num_str)/4):
+        if i == 0:
+            start_pos = 0
+            end_pos = 3
+
+        else:
+            start_pos = i * 4 # this will be used inclusively
+            end_pos = start_pos + 4 # this will be used exclusively
+
+    hex_num_str = ""    
+
+    for i in range(len(binary_num_str)/4):
+        if bin_hex_dict.get(binary_num_str(start_pos:end_pos))
+        
+
+
 
