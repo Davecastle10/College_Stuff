@@ -97,7 +97,7 @@ def den_to_bin_function(den_num):
 
 
 
-print(den_to_bin_function(100))
+#print(den_to_bin_function(100))
 
 """   
 print(bin_list)
@@ -107,8 +107,11 @@ print(ab)
 README.md""" 
 
 
-
+# this works somwtimes and not others
 def den_to_hex(denary_num):
+
+
+
     bin_hex_dict = {
         "0000" : "0",
         "000l" : "1",
@@ -130,23 +133,40 @@ def den_to_hex(denary_num):
     }
 
     binary_num_str = den_to_bin_function(denary_num)
-    if len(binary_num_str) % 4 != 0:
+    print("starting den to hex conversion")
+    if len(binary_num_str) % 4 != 0:# thsi makes its so the binary number is a multiple of 4 long
         for i in range(len(binary_num_str) % 4):
+            print(len(binary_num_str) % 4)
+            print(binary_num_str)
             binary_num_str = "0" + binary_num_str
+            print(binary_num_str)
+
     
-    for i in range(len(binary_num_str)/4):
+    print(len(binary_num_str)//4)
+    print(binary_num_str)
+
+    hex_num_list = []
+
+    for i in range(len(binary_num_str)//4):# finds the incusive start and exclusive end positions fro the string splicing for comparing hex and binary nibbles
         if i == 0:
             start_pos = 0
-            end_pos = 3
+            end_pos = 4
 
         else:
             start_pos = i * 4 # this will be used inclusively
             end_pos = start_pos + 4 # this will be used exclusively
 
-    hex_num_str = ""    
+        #for i in range(len(binary_num_str)//4):
+        hex_num_list.append( bin_hex_dict.get(binary_num_str[start_pos:end_pos]))
+        
 
-    for i in range(len(binary_num_str)/4):
-        if bin_hex_dict.get(binary_num_str(start_pos:end_pos))
+
+        
+    hex_num_str = "".join(map(str,hex_num_list))
+    print('returning hex num now')
+    return hex_num_str
+
+print (den_to_hex(201))
         
 
 
