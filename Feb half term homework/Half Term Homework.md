@@ -17,10 +17,7 @@ Becasue this way the company does not need to have as many of their own servers 
 [2]
 
 ### **(c) Discuss the legal issues the company might have considered in setting up this service and how it can ensure it complies with legal requirements. (800 to 1500 words)**  
-.  
-plan;
-- people can pirat shit
-
+answer is in its own file called 
 
 
 
@@ -29,6 +26,3 @@ plan;
 
 
 
-
-InterMovie is a service that allows users to stream movies over the Internet. When users have played a movie, it remains stored in a cache on the user’s computer. This means that someone wanting to access the same film in future can stream it from other users rather than directly from the company’s servers.
-Discuss the legal issues the company might have considered in setting up this service and how it can ensure it complies with legal requirements. (800 to 1500 words)
