@@ -19,3 +19,7 @@
 - *This pneumnoic is based on what a witness says in court **"tell the truth, the whole truth, and nothing but the truth, so help me God** (if you are religous you use the god bit)*
 
 (So help me Codd - the guy that came up with these normalisation rules-)
+
+## friday notes
+- you cant have many-to-many relationships in a database  
+- so you have to have multiple one-to-one or many-to-one (might be one-to-many not sure whixh is right) realtionships 
