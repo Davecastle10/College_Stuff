@@ -42,6 +42,15 @@ These are the elements outlined in John Gruber’s original design document. All
 
 `code`
 
+### Code Blocks
+do 
+``` 
+hello this is code
+this is more code
+and this is even more code
+```
+to create code blocks
+
 ### Horizontal Rule
 
 ---
