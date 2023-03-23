@@ -1,5 +1,5 @@
 # The Hexadecimal number system
-*First table I ever made in markdown*
+`*First table I ever made in markdown*`
 | Denary | Binary | Hexadecimal |  
 | ----------- | ----------- | ----------- | 
 | 0  | 0000 |  0 |
