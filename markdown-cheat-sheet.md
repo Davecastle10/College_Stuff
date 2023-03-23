@@ -8,6 +8,14 @@ This Markdown cheat sheet provides a quick overview of all the Markdown syntax e
 
 These are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements.
 
+# Most used/custom stuff
+
+<mark> text to highlight </mark>   
+<mark style="color:darkblue; background-color: lightgreen;" > *light green **background** with dark blue text* </mark>
+
+
+
+
 ### Heading
 
 # H1
@@ -126,3 +134,8 @@ H~2~O
 ### Superscript
 
 X^2^
+
+
+### highlighting attempts
+<mark> text to highlight </mark>   
+<mark style="color:darkblue; background-color: lightgreen;" > *light green **background** with dark blue text* </mark>
