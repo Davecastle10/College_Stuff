@@ -11,7 +11,7 @@ repeat iteration of comparisons
 until counter variable = end variable
 repeat unil end arible is 1 or 0 (might change on implementaation)
 """
-array_test = [1, 2, 99, 87, 12, 9, 5, 3]# the area being sorted
+array_test = [1, 2, 99, 87, 1000, 12, 9, 5, 3]# the area being sorted
 def bubble_sorting(sorting_array):
     counter = 0# counter var
     end = len(sorting_array)# current endpoint of arr range we are iterating through
@@ -41,10 +41,10 @@ def array_sort(arr):
                 temp2 = arr[i+1]
                 arr[i] = temp2
                 arr[i+1] = temp
-    print(arr)
+    return arr
 
-#print(array_sort(array_test))
+print(array_sort(array_test))
 
 
-print(bubble_sorting(array_test))
+#print(bubble_sorting(array_test))
 
