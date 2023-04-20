@@ -1,6 +1,6 @@
 # this is my answer to question 7c on the monday 5th june 2017 AS computer scince OCR exam course ref code H046/01
 # i think this code works but i can't exactly test it due to the nature of the question
-
+# this could be more efficient but i made it at 10:30 pm and i don't reallly have time to improve it that much.
 
 def updateDisplay(input_string):
 
