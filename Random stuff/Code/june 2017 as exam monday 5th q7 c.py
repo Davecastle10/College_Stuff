@@ -1,3 +1,7 @@
+# this is my answer to question 7c on the monday 5th june 2017 AS computer scince OCR exam course ref code H046/01
+# i think this code works but i can't exactly test it due to the nature of the question
+
+
 def updateDisplay(input_string):
 
     words = input_string.split()# assigns the sring to the varible words as a list
