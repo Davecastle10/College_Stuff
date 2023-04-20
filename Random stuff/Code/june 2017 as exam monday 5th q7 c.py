@@ -17,7 +17,7 @@ def updateDisplay(input_string):
                 display[4][i] = ""
 
 
-#        for i in range(len(words)):
+#        for i in range(len(words)): # this line was needed but i don't think it is now due to other changes i made
         temp = words.remove()# assigns next word in queue to temp
 
         if col + len(temp) > 20:# adding word on to the line exceeds 2 character legth of line go to nect line/row
