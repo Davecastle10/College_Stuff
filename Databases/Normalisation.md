@@ -1,7 +1,7 @@
 # Normalisation
 ## Benefits of normalisation
 - Makes data bases better
-- Reducing Redundancy(repetition) so that it is easier to understand, process, enter data. Also reducing redundancy chances for errors/inconsistencies(anomalies)/erroneous data
+- Reducing Redundancy(repetition) so that it is easier to understand, process, enter data. Also reducing redundancy reduces chances for errors/inconsistencies(anomalies)/erroneous data
 
 ## Normal Forms
  We can fix redundacy with normal forms
