@@ -47,7 +47,7 @@ def imp_table_sort(field):
         for i in range(arr_len-1):
             if arr[i] > arr[i+1]:
                 temp = arr[i]
-                temp2 = arr[i+1]
+                temp2 = arr[i+1]# this line and one below are not needed, could just have arr[i] = arr[i+1]
                 arr[i] = temp2
                 arr[i+1] = temp
 
