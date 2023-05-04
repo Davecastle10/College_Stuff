@@ -11,6 +11,12 @@ results = {"Detra": 17,
 # the green text on the left of each : is the key for the pair
 # and the pink text on the left of each pair is the value
 
+""" basic retrieval"""
+
+print(results["Dave"])
+# prints the value associated with the key "Dave" in the dictionary results
+
+
 
 """ This is an example of retriving data from a dictionary and using it to work out the class average score as an integer
 """
