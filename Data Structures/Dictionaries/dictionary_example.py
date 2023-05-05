@@ -36,12 +36,15 @@ print(average)
 
 results["Jake"] = 20
 
+print(results["Jake"])
 # this line creates a new entry in the dictionary with Key = "Jake" and Value = 2000#
 
 """ Updating a value in a dictionary"""
 
-results["Dave"] = 100
 
+print("Daves scrore before remarking", results["Dave"])
+results["Dave"] = 100
+print("Daves Score after remarking", results["Dave"])
 
 
 """ Removing a value stored in the dictionary """
