@@ -28,3 +28,13 @@ for i in range(len(results)):
     total = total + results[list(results.keys())[i]]
 average = int(total/len(results))
 print(average)
+
+""" adding a new entry to a dictionary is simple"""
+
+# just type the dictionary name and enter a new key that is not currrently in use,
+# into the square brackets, and set the line = to the valu you want to pair with the new key
+
+results["Jake"] = 2000
+
+# this line creates a new entry in the dictionary with Key = "Jake" and Value = 2000#
+
