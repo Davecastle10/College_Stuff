@@ -34,7 +34,17 @@ print(average)
 # just type the dictionary name and enter a new key that is not currrently in use,
 # into the square brackets, and set the line = to the valu you want to pair with the new key
 
-results["Jake"] = 2000
+results["Jake"] = 20
 
 # this line creates a new entry in the dictionary with Key = "Jake" and Value = 2000#
+
+""" Updating a value in a dictionary"""
+
+results["Dave"] = 100
+
+
+
+""" Removing a value stored in the dictionary """
+
+results.pop("Elon")
 
