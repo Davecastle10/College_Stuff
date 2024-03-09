@@ -1,4 +1,4 @@
-
+""" assuming the array is 4 students that took 5 tests each""" 
 
 marks = [[0.90, 0.82, 0.79, 0.81],
         [0.90, 0.91, 0.90, 0.92],

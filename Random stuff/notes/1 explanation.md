@@ -1,0 +1,1 @@
+ This folder is for random notes/files that arent code that dont go into an already existing folder and dont provide reason to make a new folder

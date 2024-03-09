@@ -2,7 +2,7 @@ efficiencies and big O notations
 
 O(n) = y = mx
     e.g linear search
-O(n^2) = y = x2 # from x = 0
+O(n^2) = y = x^2 # from x = 0
     e.g bubble or insertion sort
 O(logn) = y = logn
     e.g binary search

@@ -1,0 +1,2 @@
+git config --global user.name "Dave Jones"
+git config --global user.email davecastlejones10@gmail.com
