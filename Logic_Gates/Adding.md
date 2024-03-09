@@ -26,4 +26,4 @@ to add 2 bits we need a circuit with a **Carry** and  **Sum**
 | 1  | 0 | 1 |
 | 1  | 1 | 0 |
 
-![alty text](half adder.png)
+![](half_adder.png)
