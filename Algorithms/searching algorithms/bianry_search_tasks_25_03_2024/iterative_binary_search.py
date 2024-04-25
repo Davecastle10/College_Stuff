@@ -2,7 +2,9 @@
 
     This doesnt work!!!!!!!!!!!
 """
-
+""" Pseudocode:
+        - 
+"""
 
 def iterative_binary_search(array_to_search, search_item):
     found = False
