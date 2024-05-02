@@ -38,8 +38,8 @@ def my_merge(left_list, right_list):
             right_list_index += 1
 
     # if ther are any values left in one of the list - only one will have items in it - append them to the end of the list
-    merged_list.append(left_list[left_list_index:])
-    merged_list.append(right_list[right_list_index:])
+    merged_list.extend(left_list[left_list_index:])
+    merged_list.extend(right_list[right_list_index:])
 
     return merged_list
 
