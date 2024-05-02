@@ -12,7 +12,7 @@
         list is now sorted
 
 """
-# it doenst work
+# this merges the stuff
 def my_merge(left_list, right_list):
     # list lengths
     right_list_length = len(right_list)
@@ -43,7 +43,7 @@ def my_merge(left_list, right_list):
 
     return merged_list
 
-
+# this uses the merge stuff o do stuff
 def my_merge_sort(array_to_be_sorted):
     arr_length = len(array_to_be_sorted)
     if arr_length <= 1:
