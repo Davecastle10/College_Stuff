@@ -13,7 +13,7 @@
 
 """
 # this merges the stuff
-def my_merge(left_list, right_list):
+def merge(left_list, right_list):
     # list lengths
     right_list_length = len(right_list)
     left_list_length = len(left_list)
@@ -44,17 +44,17 @@ def my_merge(left_list, right_list):
     return merged_list
 
 # this uses the merge stuff o do stuff
-def my_merge_sort(array_to_be_sorted):
+def merge_sort(array_to_be_sorted):
     arr_length = len(array_to_be_sorted)
     if arr_length <= 1:
         return array_to_be_sorted
     else:
         middle_index = arr_length // 2
-        left_list = my_merge_sort(array_to_be_sorted[:middle_index])
-        right_list = my_merge_sort(array_to_be_sorted[middle_index:])
+        left_list = merge_sort(array_to_be_sorted[:middle_index])
+        right_list = merge_sort(array_to_be_sorted[middle_index:])
 
-        return my_merge(left_list, right_list)
+        return merge(left_list, right_list)
 
 array_test = [1,2,3,2,4,5,78,92,5,64]
 
-print(my_merge_sort(array_test))
+print(merge_sort(array_test))
