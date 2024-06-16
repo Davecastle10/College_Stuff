@@ -16,7 +16,7 @@ def insertion_sort(arr_to_sort):
     for index in range(len(arr_to_sort)):
         current_item = arr_to_sort[index]
         new_index = index
-        while arr_to_sort[new_index - 1] > arr_to_sort[new_index]:
+        while new_index > 0 and arr_to_sort[new_index - 1] > current_item:
             arr_to_sort[new_index] = arr_to_sort[new_index - 1]
             new_index = new_index - 1
         arr_to_sort[new_index] = current_item
